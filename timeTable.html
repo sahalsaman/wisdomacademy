@@ -38,16 +38,11 @@
         if(!fnamet){
             // alert("please login")
             document.getElementById("inner_page").innerHTML="<a href='login.html'><h2 style='text-align:center;margin-top:20%''>Please Login</h2></a>"
-        }
-        else{
-            atnc()
+        }else{
+            timetable()
         }
     }
-        function logout(){
-      localStorage.clear(
-
-      )
-        }
+        
         
         
     </script>
@@ -69,11 +64,7 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
                     <ul class="navbar-nav">
-                        <li><a class="nav-link active" href="index.html">Home</a></li>
-                        <li><a class="nav-link" href="about.html">About</a></li>
-                        <li><a class="nav-link" href="#newsid">News</a></li>
-                        <li><a class="nav-link" href="contact.html">Contact us</a></li>
-                        <li><a class="nav-link" onclick="logout()" href="login.html">Logout</a></li>
+                        <li><a class="nav-link active" href="dashboard.html">Back</a></li>
                     </ul>
                 </div>
                 <div class="search-box">
@@ -95,67 +86,10 @@
     <div class="section layout_padding contact_section" style="background:#f6f6f6;">
         <div class="container">
             <h2>hai, <span id="fnameid"></span></h2>
-            <div class="row" >
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card mt-3" style="width: 100%">
-                        <div class="card-body">
-                          <h4 class="card-title">Time Table</h4>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="/timeTable.html"><button onclick="timetable()" class="btn btn-primary">Click</button></a>
-
-                        </div>
-                      </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card  mt-3" style="width: 100%">
-                        <div class="card-body">
-                          <h4 class="card-title">Notification</h4>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card  mt-3" style="width: 100%;height: 95%;">
-                        <div class="card-body">
-                          <h4 class="card-title">Attendence</h4>
-                          <p class="card-text" id="atncid"></p>
-                          <!-- <button onclick="atnc()" class="btn btn-primary">Click</button> -->
-                        </div>
-                      </div>
-                </div>
+            
+            <table id="ttid" class="table">
                 
-            </div>
-            <div class="row" >
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card  mt-3" style="width: 100%">
-                        <div class="card-body">
-                          <h4 class="card-title">Exam Result</h4>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card mt-3" style="width: 100%">
-                        <div class="card-body">
-                          <h4 class="card-title">Study meterials</h4>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card  mt-3" style="width: 100%">
-                        <div class="card-body">
-                          <h4 class="card-title">Suggetions</h4>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-                </div>
-                
-            </div>
+              </table>
 
         </div>
     </div>
